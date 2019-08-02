@@ -1,2 +1,2 @@
 # JavaScriptSandbox
-# Just a little JavaScript
+Just a little JavaScript
