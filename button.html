@@ -16,17 +16,32 @@
             padding: 10px 30px;
             display: inline-block;
             cursor: pointer;
+            text-decoration: none;
+        }
+
+        .lt-orange-button-lg {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            background: #f9be00;
+            color: #fff;
+            padding: 1.2em 3em;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
         }
     </style>
-
-    <script src="smallscripts.js"></script>
 
 </head>
 
 <body>
+    <p>Sm</p>
     <!-- Clean Orange Button - small - sm -->
-    <p class="orange-button-sm" id="btn-clck">Click here!</p>
-
+    <a href="#" class="orange-button-sm" id="btn-clck">Click here!</a>
+    <p>Lg</p>
+    <!-- Clean Light Orange Button - large - lg -->
+    <a href="#" class="lt-orange-button-lg">Some text...</a>
+    <p>Xl</p>
     <script>
         const test = document.getElementById('btn-clck');
         test.addEventListener('click', updateName);
