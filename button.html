@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Button test</title>
     <style>
-        .orange-button-sm {
+        .btn-orange-sm {
             font-family: Arial, Helvetica, sans-serif;
             letter-spacing: 1px;
             font-size: 16px;
@@ -19,7 +19,7 @@
             text-decoration: none;
         }
 
-        .lt-orange-button-lg {
+        .btn-orange-lg {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
             font-size: 1rem;
@@ -30,6 +30,7 @@
             cursor: pointer;
             text-decoration: none;
         }
+
     </style>
 
 </head>
@@ -37,17 +38,24 @@
 <body>
     <p>Sm</p>
     <!-- Clean Orange Button - small - sm -->
-    <a href="#" class="orange-button-sm" id="btn-clck">Click here!</a>
+    <a href="#" class="btn-orange-sm" id="btn-clck-a">Click here!</a>
     <p>Lg</p>
     <!-- Clean Light Orange Button - large - lg -->
-    <a href="#" class="lt-orange-button-lg">Some text...</a>
+    <a href="#" class="btn-orange-lg" id="btn-clck-b">Some text...</a>
     <p>Xl</p>
     <script>
-        const test = document.getElementById('btn-clck');
+        const test = document.getElementById('btn-clck-a');
         test.addEventListener('click', updateName);
         function updateName() {
             let name = prompt('Enter your name');
             test.textContent = 'Your Name is: ' + name;
+        }
+
+        var test2 = document.getElementById('btn-clck-b');
+        test2.addEventListener('click', updateName2);
+        function updateName2() {
+            const text = 'New name';
+            test2.textContent = text;
         }
     </script>
 </body>
